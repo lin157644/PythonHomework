@@ -20,6 +20,6 @@ pylab.xlabel("X")
 pylab.ylabel("Y")
 pylab.title("f(x)=max( abs(x sin(x)),abs(x cos(x)) ),g(x)=min( abs(x sin(x)), abs(x cos(x)) )")
 
-pylab.savefig('homework.png')
+pylab.savefig('Output/homework.png')
 
 pylab.show()

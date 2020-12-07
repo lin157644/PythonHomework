@@ -44,6 +44,6 @@ pylab.legend(loc=4)
 pylab.axis((-3.5, 3.5, -14, 14))
 
 #Delete this next line when uploading the homework
-pylab.savefig('homework.png')
+pylab.savefig('Output/homework.png')
 
 pylab.show()
