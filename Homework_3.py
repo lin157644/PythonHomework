@@ -1,10 +1,11 @@
 import pylab
+from sympy import *
 
 pi = pylab.pi
 
 a, b, n = 0, pi/2, 100
 
-fn = lambda x : (pylab.sin(3*x)**2)*pylab.cos(3*X)
+fn = lambda x : (pylab.sin(3*x)**2)*pylab.cos(3*x)
 
 
 xs, h = pylab.linspace(a, b, n+1, retstep=True)
@@ -28,7 +29,12 @@ rsum *= h
 lsum *= h
 usum *= h
 tsum *= h/2
-isum = -1/9 #正確解
+#isum = -1/9 #正確解
+#var("x")
+#isum = integrate((sympy.sin(3*x)**2)*sympy.cos(3*x), (x, 0, 10))
+#print(isum)
+var("x")
+integrate(3*x**5 + 3*x + 5, x)
 
 print("數學積分   :", round(isum, 9), end="\n\n")
 print("迴圈求積:")
